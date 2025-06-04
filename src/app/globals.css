@@ -24,3 +24,88 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Leaflet Map Custom Styles */
+.leaflet-container {
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  border-radius: 2px !important;
+}
+
+/* Custom marker animations */
+.leaflet-marker-icon {
+  transition: transform 0.2s ease;
+}
+
+.leaflet-marker-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Smooth zoom animations */
+.leaflet-zoom-animated {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom popup styling */
+.custom-popup .leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.custom-popup .leaflet-popup-tip {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+@media (prefers-color-scheme: dark) {
+  .custom-popup .leaflet-popup-content-wrapper {
+    background: rgba(31, 41, 55, 0.95);
+    color: white;
+  }
+
+  .custom-popup .leaflet-popup-tip {
+    background: rgba(31, 41, 55, 0.95);
+  }
+}
+
+/* Custom close button styling for popup cards */
+.leaflet-popup-close-button {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  width: 32px !important;
+  height: 32px !important;
+  padding: 4px !important;
+  line-height: 24px !important;
+  text-align: center !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+}
+
+.leaflet-popup-close-button:hover {
+  transform: scale(1.05) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .leaflet-popup-close-button {
+    color: white !important;
+  }
+}
+
+/* Line clamp utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

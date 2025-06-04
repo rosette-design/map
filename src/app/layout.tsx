@@ -19,16 +19,20 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Rosette Demo",
+  title: "Rosette Map",
   description: "Rosette is a platform for creating and sharing your moments.",
   icons: {
     icon: [
       { url: "/favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicons/favicon.ico", sizes: "any" }
+      { url: "/favicons/favicon.ico", sizes: "any" },
     ],
     apple: [
-      { url: "/favicons/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+      {
+        url: "/favicons/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
     ],
     other: [
       {
@@ -36,10 +40,10 @@ export const metadata: Metadata = {
         url: "/favicons/android-chrome-192x192.png",
       },
       {
-        rel: "android-chrome-512x512", 
+        rel: "android-chrome-512x512",
         url: "/favicons/android-chrome-512x512.png",
-      }
-    ]
+      },
+    ],
   },
   manifest: "/favicons/site.webmanifest",
 };
